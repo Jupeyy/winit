@@ -1519,7 +1519,7 @@ impl UnownedWindow {
                     .xconn
                     .xcb_connection()
                     .grab_pointer(
-                        true as _,
+                        false,
                         self.xwindow,
                         xproto::EventMask::BUTTON_PRESS
                             | xproto::EventMask::BUTTON_RELEASE
